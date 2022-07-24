@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:tinder/pages/explore_page.dart';
 import 'package:tinder/pages/chat_page.dart';
+import 'package:tinder/pages/likes_page.dart';
 
 class RootPage extends StatefulWidget {
   @override
@@ -22,7 +23,7 @@ class _RootPageState extends State<RootPage> {
   Widget getBody() {
     return IndexedStack(
       index: pageIndex,
-      children: [ExplorePage(),ChatPage()],
+      children: [ExplorePage(),LikesPage(),ChatPage()],
     );
   }
 
